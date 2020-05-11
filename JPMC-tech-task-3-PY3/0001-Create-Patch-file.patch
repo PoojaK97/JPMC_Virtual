@@ -1,0 +1,27 @@
+From fb6272ba12c4ce17c99dac6a89b06f528875bc1c Mon Sep 17 00:00:00 2001
+From: PoojaK97 <thisispooja97@gmail.com>
+Date: Tue, 12 May 2020 02:08:13 +0530
+Subject: [PATCH] Create Patch file
+
+---
+ src/DataManipulator.ts | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/DataManipulator.ts b/src/DataManipulator.ts
+index 1a070e2..79ee13d 100644
+--- a/src/DataManipulator.ts
++++ b/src/DataManipulator.ts
+@@ -17,8 +17,8 @@ export class DataManipulator {
+     const priceDEF = (serverRespond[1].top_ask.price + serverRespond[1].top_bid.price)/2;
+ 
+     const ratio = priceABC/priceDEF;
+-    const upperBound = 1 + 0.09;
+-    const lowerBound = 1 - 0.09;
++    const upperBound = 1 + 0.01;
++    const lowerBound = 1 - 0.01;
+ 
+     return {
+       price_abc: priceABC,
+-- 
+2.25.0.windows.1
+
